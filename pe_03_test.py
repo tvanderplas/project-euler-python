@@ -66,8 +66,8 @@ class get_prime_factors_tests(unittest.TestCase):
 	def test_prime_factors_of_17(self):
 		self.assertEqual(get_prime_factors(17), [17])
 
-	def test_prime_factors_of_34(self):
-		self.assertEqual(get_prime_factors(34), [2, 3, 3])
+	def test_prime_factors_of_18(self):
+		self.assertEqual(get_prime_factors(18), [2, 3, 3])
 
 	def test_prime_factors_of_19(self):
 		self.assertEqual(get_prime_factors(19), [19])
