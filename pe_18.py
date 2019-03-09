@@ -33,7 +33,7 @@
 
 def max_path(triangle: list):
 	for i, row in enumerate(triangle[1:]):
-		for ii, node in enumerate(row):
+		for ii in range(1, len(row) + 1):
 			if 0 < ii < len(row) - 1:
 				triangle[i + 1][ii] += max(triangle[i][ii - 1:ii + 1])
 			elif ii == 0:
