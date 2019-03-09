@@ -9,6 +9,7 @@
 
 
 def count_letters(x: int):
+	"""returns number of letters for integers up to 1000"""
 	map_ones = [0, 3, 3, 5, 4, 4, 3, 5, 5, 4]
 	map_tens = [0, 4, 6, 6, 5, 5, 5, 7, 6, 6]
 	digits = [int(d) for d in str(x)[::-1]]

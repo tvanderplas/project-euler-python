@@ -6,11 +6,12 @@
 
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-def Fibonacci_generator(x):
+def fibonacci_generator(x):
+	"""generates list of fibonacci numbers under x"""
 	numbers = [1, 1]
 	while numbers[-1] + numbers[-2] < int(x):
 		numbers.append(numbers[-1] + numbers[-2])
 	return numbers
 
 if __name__ == '__main__':
-	print(sum(Fibonacci_generator(4000000)[2::3]))
+	print(sum(fibonacci_generator(4000000)[2::3]))
