@@ -16,3 +16,12 @@
 
 from pe_21 import divisors
 
+if __name__ == '__main__':
+	abundant = []
+	abundant_sums = set()
+	for n in range(1, 28124):
+		if sum(divisors(n)) > n:
+			abundant.append(n)
+			for number in abundant:
+				abundant_sums.add(n + number)
+	print(sum([x for x in range(1, 28124) if x not in abundant_sums]))
