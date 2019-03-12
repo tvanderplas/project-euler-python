@@ -6,3 +6,14 @@
 
 # What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
 
+from pe_functions import factorial
+
+def permutations(word: str, answer: list = []):
+	if len(word) < 2:
+		return [word]
+	base = word[:2]
+	answer.extend([base, base[::-1]])
+	while False: #len(answer[0]) < len(word):
+		for char in base:
+			pass
+	return answer
