@@ -7,3 +7,4 @@ from pe_18 import max_path
 from pe_19 import days_in_month, is_leap_year
 from pe_20 import factorial
 from pe_21 import divisors
+from pe_24 import permutations
