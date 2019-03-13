@@ -1,21 +1,7 @@
 
 import context
-from Challenges.functions import get_primes, get_prime_factors
 import unittest
-
-class get_primes_tests(unittest.TestCase):
-
-	def test_primes_under_20(self):
-		self.assertEqual(get_primes(20), [2, 3, 5, 7, 11, 13, 17, 19])
-
-	def test_no_primes_under_1(self):
-		self.assertEqual(get_primes(1), [])
-
-	def test_no_primes_if_zero_input(self):
-		self.assertEqual(get_primes(0), [])
-
-	def test_no_primes_if_negative_input(self):
-		self.assertEqual(get_primes(-10), [])
+from Challenges.functions import get_prime_factors
 
 class get_prime_factors_tests(unittest.TestCase):
 
@@ -85,8 +71,8 @@ class get_prime_factors_tests(unittest.TestCase):
 	def test_prime_factors_of_104677(self):
 		self.assertEqual(get_prime_factors(104677), [104677])
 
-	def test_prime_factors_of_bignasty(self):
-		self.assertEqual(get_prime_factors(600851475143), [71, 839, 1471, 6857])
+	# def test_prime_factors_of_bignasty(self):
+	# 	self.assertEqual(get_prime_factors(600851475143), [71, 839, 1471, 6857])
 
 	def test_prime_factors_of_1(self):
 		self.assertEqual(get_prime_factors(1), [])
