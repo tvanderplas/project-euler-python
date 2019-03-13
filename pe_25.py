@@ -23,3 +23,20 @@
 
 # What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
 
+from decimal import getcontext, Decimal
+from math import sqrt
+
+def fibonacci(n: int):
+	getcontext().prec = 1000
+	phi = Decimal((1 + sqrt(5)) / 2)
+	f = (phi ** n - (-phi) ** -n) / (2 * phi - 1)
+	return int(f)
+
+if __name__ == '__main__':
+	i = 1
+	while len(str(fibonacci(i))) != 1000:
+		i += 1000 - len(str(fibonacci(i)))
+	print(i)
+
+
+
