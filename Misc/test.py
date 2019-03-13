@@ -1,3 +1,0 @@
-import adsfasdf
-
-print('hello')
