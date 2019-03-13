@@ -14,7 +14,7 @@
 
 # Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
 
-from pe_21 import divisors
+from functions import divisors
 
 if __name__ == '__main__':
 	abundant = []

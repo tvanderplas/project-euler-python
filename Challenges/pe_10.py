@@ -4,6 +4,6 @@
 
 # Find the sum of all the primes below two million.
 
-from pe_03 import get_primes
+from functions import get_primes
 
 print(sum(get_primes(2000000)))

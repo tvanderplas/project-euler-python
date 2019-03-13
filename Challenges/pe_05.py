@@ -4,7 +4,8 @@
 
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-from pe_03 import get_prime_factors
+from functions import get_prime_factors
+
 all_factors = []
 for n in range(2, 21):
 	for i in get_prime_factors(n):

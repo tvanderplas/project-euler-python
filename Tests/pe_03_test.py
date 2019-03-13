@@ -1,6 +1,7 @@
 
+import context
+from Challenges.functions import get_primes, get_prime_factors
 import unittest
-from pe_03 import get_primes, get_prime_factors
 
 class get_primes_tests(unittest.TestCase):
 

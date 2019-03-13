@@ -8,16 +8,7 @@
 # Evaluate the sum of all the amicable numbers under 10000.
 
 from math import sqrt
-
-def divisors(x: int):
-	if x > 1:
-		answer = [1]
-		for n in range(2, int(sqrt(x)) + 1):
-			if x % n == 0:
-				answer.extend([n, x // n])
-		return [x for x in sorted(set(answer))]
-	else:
-		return [x for x in []]
+from functions import divisors
 
 if __name__ == '__main__':
 	answer = []

@@ -7,12 +7,7 @@
 
 # Find the sum of the digits in the number 100!
 
-def factorial(x: int):
-	if x > 0:
-		x *= factorial(x - 1)
-		return x
-	else:
-		return 1
+from functions import factorial
 
 if __name__ == '__main__':
 	print(sum([int(x) for x in str(factorial(100))]))

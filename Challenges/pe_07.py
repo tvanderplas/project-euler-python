@@ -4,6 +4,6 @@
 
 # What is the 10 001st prime number?
 
-from pe_03 import get_primes
+from functions import get_primes
 
 print(get_primes(150000)[10000])

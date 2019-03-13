@@ -25,12 +25,7 @@
 
 from decimal import getcontext, Decimal
 from math import sqrt
-
-def fibonacci(n: int):
-	getcontext().prec = 1000
-	phi = Decimal((1 + sqrt(5)) / 2)
-	f = (phi ** n - (-phi) ** -n) / (2 * phi - 1)
-	return int(f)
+from functions import fibonacci
 
 if __name__ == '__main__':
 	i = 1

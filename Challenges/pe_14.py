@@ -14,23 +14,7 @@
 
 # NOTE: Once the chain starts the terms are allowed to go above one million.
 
-def collatz(n: int):
-	"""returns chain length of collatz sequence"""
-	chains = dict()
-	for x in range(1, n):
-		chain = 1
-		p = x
-		while x > 1:
-			if x % 2 == 0:
-				x //= 2
-				if x in chains:
-					chain += chains[x] - 1
-					x = 1
-			else:
-				x *= 3; x += 1
-			chain += 1
-		chains.update({p: chain})
-	return chains
+from functions import collatz
 
 if __name__ == '__main__':
 	c = collatz(1000000)

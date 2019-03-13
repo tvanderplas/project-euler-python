@@ -30,17 +30,7 @@
 # NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. 
 # However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)
 
-
-def max_path(triangle: list):
-	for i, row in enumerate(triangle[1:]):
-		for ii in range(1, len(row) + 1):
-			if 0 < ii < len(row) - 1:
-				triangle[i + 1][ii] += max(triangle[i][ii - 1:ii + 1])
-			elif ii == 0:
-				triangle[i + 1][ii] += triangle[i][ii]
-			elif ii == len(row) - 1:
-				triangle[i + 1][ii] += triangle[i][ii - 1]
-	return max(triangle[-1])
+from functions import max_path
 
 if __name__ == '__main__':
 	problem = [

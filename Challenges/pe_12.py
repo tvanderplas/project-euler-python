@@ -18,7 +18,7 @@
 
 # What is the value of the first triangle number to have over five hundred divisors?
 
-from pe_03 import get_prime_factors
+from functions import get_prime_factors
 from math import sqrt
 
 divisors = []

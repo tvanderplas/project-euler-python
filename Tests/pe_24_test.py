@@ -1,5 +1,5 @@
-from pe_24 import permutations
-from pe_functions import factorial
+import context
+from Challenges.functions import permutations, factorial
 import unittest
 
 class permutations_test(unittest.TestCase):
