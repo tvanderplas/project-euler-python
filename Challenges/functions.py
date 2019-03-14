@@ -1,7 +1,8 @@
+from decimal import getcontext, Decimal
 from math import sqrt
 
-def fibonacci(n: int):
-	getcontext().prec = 1000
+def fibonacci(n: int, precision: int = 1000):
+	getcontext().prec = precision
 	phi = Decimal((1 + sqrt(5)) / 2)
 	f = (phi ** n - (-phi) ** -n) / (2 * phi - 1)
 	return int(f)
