@@ -10,4 +10,4 @@ for x in range(100, 1000):
 		p = str(x * y)
 		if p == p[::-1] and int(p) > biggest:
 			biggest = int(p)
-			print(x, y, p)
+print(biggest)

@@ -35,5 +35,4 @@ while biggest < 500:
 	n += 1
 	if biggest < len(divisors):
 		biggest = len(divisors) * 2
-		print(n, biggest, triangle, get_prime_factors(triangle))
 print(triangle)
