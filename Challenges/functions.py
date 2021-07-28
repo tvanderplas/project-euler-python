@@ -60,7 +60,7 @@ def collatz(n: int):
 
 def catalan(x: int):
 	pascal = [1, 1]
-	for n in range(x * 2 - 1):
+	for _ in range(x * 2 - 1):
 		pascal = [pascal[i] + pascal[i + 1] for i, v in enumerate(pascal) if i != len(pascal) - 1]
 		pascal.append(1)
 		pascal.insert(0, 1)
